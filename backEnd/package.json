@@ -8,8 +8,8 @@
     "db:init": "tsnd ./scripts/executeTwo.ts",
     "db:reset": "npm run db:delete && npm run db:create && npm run db:insert",
     "db:create": "prisma db push",
-    "db:insert": "tsnd ./prisma/dbInsert/index.ts",
-    "db:delete": "tsnd ./prisma/dbDelete/index.ts",
+    "db:insert": "tsnd ./prisma/migration/dbInsert.ts",
+    "db:delete": "tsnd ./prisma/migration/dbDelete.ts",
     "dev": "tsnd ./src/Server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
