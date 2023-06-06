@@ -1,4 +1,4 @@
-import conn from "../../src/Databases/Connection";
+import conn from "../../src/Infrasctrure/Databases/Connection";
 
 async function dbInsert() {
   await conn.languages.createMany({ data: [
