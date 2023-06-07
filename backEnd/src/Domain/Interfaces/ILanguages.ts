@@ -7,4 +7,5 @@ export interface ILanguages {
 
 export interface IRepository {
   findAll(): Promise<ILanguages[]>,
+  findId(id: string): Promise<ILanguages | null>,
 }

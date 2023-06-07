@@ -1,5 +1,6 @@
 import { ILanguages, IRepository } from "../Interfaces/ILanguages";
 import { Languages } from "../Entities/Languages";
+import LanguagesError from "../Errors/LanguagesError";
 
 export default class LanguagesService {
   constructor(private repository: IRepository) {}
@@ -13,5 +14,13 @@ export default class LanguagesService {
 
     const result = values.map((e) => this.createLanguages(e));
     return result;
+  }
+
+  public async findId(id: string) {
+    const value = await this.repository.findId(id);
+    
+    if (value) return this.createLanguages(value);
+    
+    throw new LanguagesError('Id invalid');
   }
 }

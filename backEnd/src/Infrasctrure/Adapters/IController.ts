@@ -11,4 +11,5 @@ export interface IResponse {
 
 export interface IController {
   getAll(req: IRequest): Promise<IResponse>
+  getId(req: IRequest): Promise<IResponse>,
 }
