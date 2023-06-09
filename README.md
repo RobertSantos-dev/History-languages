@@ -11,7 +11,7 @@ O objetivo é por em pratica os conhecimentos e revisão em **Prisma**, **MongoD
 ## Explicação
 
 <!-- ### BackEnd -->
-Com a parte do backEnd ja criada, o servidor fornece uma API que contem as propriedade `id`, `name`, `description` e `year`. Os valores **DEVEM** ser inseridos de forma automatica, usando os comando de instalação que estão a abaixo. A estrutura individual ficara assim:
+Com a parte do backEnd ja criada, o servidor fornece uma API que contem as propriedade `id`, `name`, `description` e `year`. Os valores **DEVEM** ser inseridos de forma automatica, usando os comando de instalação que estão a [abaixo](#tecnologias-ferramentas-e-metodos). A estrutura individual ficara assim:
 ```json
 {
   "id": "647a6844f8aad2735618dacc",
@@ -42,6 +42,8 @@ A api não contem metodos de inserir, atualizar ou deletar. Pois o objetivo é p
 - Mocha
 - Chai
 - Docker
+- BDD
+- Clean Architecture
 
 </br>
 
