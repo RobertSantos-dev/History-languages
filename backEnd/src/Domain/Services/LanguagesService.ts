@@ -18,9 +18,9 @@ export default class LanguagesService {
 
   public async findId(id: string) {
     const value = await this.repository.findId(id);
-    
+
     if (value) return this.createLanguages(value);
-    
+
     throw new LanguagesError('Id invalid');
   }
 }
