@@ -10,3 +10,6 @@ export const Text = styled.Text`
   font-size: 18px;
   color: white;
 `;
+
+export const Button = styled.TouchableOpacity`
+`;
