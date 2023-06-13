@@ -1,11 +1,13 @@
-// import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+
+import Routes from './src/routes';
 
 export default function App() {
   return (
-    <View>
-      {/* <StatusBar style="auto" /> */}
-      <Text>Deus é Fiel</Text>
-    </View>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <StatusBar style="dark" backgroundColor="transparent" />
+      <Routes />
+    </GestureHandlerRootView>
   );
 }
