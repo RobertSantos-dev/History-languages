@@ -1,11 +1,9 @@
 import api from "./config";
 import { Dispatch, SetStateAction } from 'react';
 
-type Params = {
-  setList: Dispatch<SetStateAction<object[]>>
-}
+type Params = Dispatch<SetStateAction<object[]>>
 
-export const getAll = async ({ setList }: Params) => {
+export const getAll = async (setList: Params) => {
   try {
     const { data } = await api.get('/languages');
 

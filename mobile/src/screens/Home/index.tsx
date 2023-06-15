@@ -9,7 +9,7 @@ export default function Home() {
   const [list, setList] = useState<object[]>([]);
 
   useEffect(() => {
-    // getAll({ setList });
+    getAll(setList);
   });
 
   useEffect(() => {
